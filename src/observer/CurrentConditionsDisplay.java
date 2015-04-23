@@ -30,10 +30,11 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
             this.pressure = weatherData.getPressure();
             display();
         }
+ 
     }
 
     @Override
     public void display() {
-            System.out.println("Conditions courantes: " + temperature + "F degrés et  " + humidity + "% d'humidité et " + pressure + " pour la pression ");
+            System.out.println("Conditions courantes: " + temperature + "C° degrés et  " + humidity + "% d'humidité et " + pressure + " pour la pression ");
     }
 }
